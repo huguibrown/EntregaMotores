@@ -1,0 +1,27 @@
+<%- include('./header')-%>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 style="color:black;"> Ingresar productos</h1>
+            <br>
+            <form action="/productos" method="post">
+                <div class="form-group">
+                    <label for="">Nombre del producto:</label>
+                    <input id="nombre" class="form-control" type="text" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="">Precio:</label>
+                    <input id="precio" class="form-control" type="number" name="precio">         
+                </div>
+                <div class="form-group">
+                    <label for="">Foto:</label>
+                    <input id="foto" class="form-control" type="url" name="foto">
+                </div>
+                <button class="btn btn-success mt-3 mb-5">Enviar</button>
+            </form>
+            <h2 style="color:black">Historial</h2>
+            <%- include('./tabla')-%>
+        </div>
+    </div>
+</body>
+</html>

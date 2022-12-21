@@ -1,0 +1,17 @@
+extends layout
+
+block formulario
+    div(class="container")
+        div(class="jumbotron")
+            h1(class="bg-dark text-light") Inserte producto
+                form(action="/productos"  method="post") 
+                    div(class="form-group") 
+                        label Nombre
+                        input(id="Nombre" class="form-control" type="text" name="Nombre")
+                    div 
+                        label Precio
+                        input(id="Precio" class="form-control" type="number" name="Precio")
+                    div  
+                        label Foto
+                        input( id="foto" class="form-control" type="image" name="foto")
+                button(class="btn btn-succes mt-3 mb-5 btn-light") Enviar
